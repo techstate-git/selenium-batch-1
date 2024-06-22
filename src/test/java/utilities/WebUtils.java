@@ -15,6 +15,7 @@ import java.util.List;
 
 public class WebUtils {
     public static WebDriver driver = new ChromeDriver();
+    public static Duration timeDuration = Duration.ofSeconds(10);
 
     //Static method to wait for an element to be visible with a specified timeout
     public static WebElement waitForElement(By locator, Duration timeout) {
